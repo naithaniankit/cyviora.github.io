@@ -70,25 +70,67 @@
 </head>
 <body style="margin:0; background:#000; color:white; font-family:Arial, sans-serif; text-align:center;">
 
-    <!-- LOGO TOP LEFT -->
-    <div style="position:absolute; top:20px; left:20px; text-align:left;">
-        <img src="logo.png" alt="Cyviora Logo" style="height:120px;">
-    </div>
+<style>
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+        .logo-box img {
+            height: 90px !important;
+        }
+        .coming-title {
+            font-size: 42px !important;
+        }
+        .coming-text {
+            font-size: 20px !important;
+        }
+        .contact-title {
+            font-size: 30px !important;
+        }
+        .contact-domain {
+            font-size: 22px !important;
+        }
+        .center-box {
+            padding: 30px 20px !important;
+        }
+    }
 
-    <!-- CENTER BOX -->
-    <div style="margin-top:160px; display:inline-block; background:#111; padding:50px 40px; border-radius:4px;">
-        <h1 style="color:#ff6600; font-size:70px; margin:0;">Coming Soon</h1>
-        <p style="color:white; font-size:28px; margin-top:25px; max-width:1000px; line-height:1.4;">
-            We are building something amazing for India's Next Tech Generation.<br>
-            Stay connected for updates!
-        </p>
-    </div>
+    @media (max-width: 480px) {
+        .logo-box img {
+            height: 70px !important;
+        }
+        .coming-title {
+            font-size: 32px !important;
+        }
+        .coming-text {
+            font-size: 18px !important;
+        }
+        .contact-title {
+            font-size: 24px !important;
+        }
+        .contact-domain {
+            font-size: 18px !important;
+        }
+    }
+</style>
 
-    <!-- CONTACT SECTION -->
-    <div style="margin-top:120px;">
-        <h2 style="color:#ff6600; font-size:48px; margin-bottom:10px;">Concect us :- <span style="color:white;">+91 7455999135</span></h2>
-        <p style="font-size:36px; color:white; margin-top:20px;">cyvioratechnologies.in</p>
-    </div>
+<!-- LOGO TOP LEFT -->
+<div class="logo-box" style="position:absolute; top:20px; left:20px; text-align:left;">
+    <img src="logo.png" alt="Cyviora Logo" style="height:140px;">
+</div>
+
+<!-- CENTER BOX -->
+<div class="center-box" style="margin-top:260px; display:inline-block; background:#111; padding:50px 40px; border-radius:4px;">
+    <h1 class="coming-title" style="color:#ff6600; font-size:70px; margin:0;">Coming Soon</h1>
+    <p class="coming-text" style="color:white; font-size:28px; margin-top:25px; max-width:1000px; line-height:1.4;">
+        We are building something amazing for India's Next Tech Generation.<br>
+        Stay connected for updates!
+    </p>
+</div>
+
+<!-- CONTACT SECTION -->
+<div style="margin-top:120px; padding-bottom:60px;">
+    <h2 class="contact-title" style="color:#ff6600; font-size:48px; margin-bottom:10px;">Concect us :- <span style="color:white;">+91 7455999135</span></h2>
+    <p class="contact-domain" style="font-size:36px; color:white; margin-top:20px;">cyvioratechnologies.in</p>
+</div>
 
 </body>
 </html>
