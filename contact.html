@@ -27,7 +27,7 @@
     theme: {
       extend: {
         colors: {
-          "primary": "#ff6a00",
+          "primary": "#AF2727",        /* updated */
           "background-dark": "#080c10",
           "text-light": "#f1f1f1",
           "border-dark": "#34383c",
@@ -47,33 +47,38 @@
 
 <div class="relative flex min-h-screen w-full flex-col">
 
-<!-- Header -->
-<!-- Header -->
-<header class="sticky top-0 z-50 flex items-center justify-center whitespace-nowrap border-b border-solid border-b-white/10 bg-[#080c10]/80 px-4 sm:px-10 py-3 backdrop-blur-sm">
+<!-- HEADER -->
+<header class="sticky top-0 z-50 flex items-center justify-center whitespace-nowrap 
+               border-b border-solid border-b-white/10 bg-[#080c10]/80 
+               px-4 sm:px-10 py-3 backdrop-blur-sm">
+
   <div class="flex items-center justify-between w-full max-w-6xl">
-    
+
     <a class="flex items-center gap-4" href="index.html">
-      <img class="h-14 w-auto" src="https://i.ibb.co/p6rhGjbC/logo.png" alt="Cyviora Technologies Logo" />
+      <img class="h-14 w-auto" src="https://i.ibb.co/zH4ZmND7/cyviora.png" alt="Cyviora Technologies Logo" />
     </a>
 
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center gap-9">
-      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="index.html">Home</a>
-      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="courses.html">Courses</a>
-      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="about.html">About Us</a>
-      <a class="text-[#ff6a00] text-sm font-bold" href="contact.html">Contact</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#AF2727]" href="index.html">Home</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#AF2727]" href="courses.html">Courses</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#AF2727]" href="about.html">About Us</a>
+      <a class="text-[#AF2727] text-sm font-bold" href="contact.html">Contact</a>
     </nav>
 
     <div class="flex items-center gap-4">
       
       <!-- Desktop Enroll Now -->
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
-         class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-[#ff6a00] text-white text-sm font-bold hover:bg-orange-600">
+         class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center 
+                rounded-lg h-10 px-4 bg-[#AF2727] text-white text-sm font-bold 
+                hover:bg-[#8A1F1F]">
         <span>Enroll Now</span>
       </a>
 
       <!-- Mobile Menu Button -->
-      <button class="mobile-menu-btn md:hidden flex items-center justify-center text-[#F5F5F5]" aria-expanded="false" aria-controls="mobile-nav">
+      <button class="mobile-menu-btn md:hidden flex items-center justify-center text-[#F5F5F5]"
+              aria-expanded="false" aria-controls="mobile-nav">
         <span class="material-symbols-outlined text-3xl">menu</span>
       </button>
 
@@ -82,137 +87,180 @@
   </div>
 </header>
 
-<!-- Mobile Navigation -->
+<!-- Mobile Nav -->
 <nav id="mobile-nav" class="mobile-nav hidden md:hidden bg-[#080c10] border-b border-white/10">
   <div class="px-4 py-4 flex flex-col gap-2">
-    <a href="index.html" class="py-2 hover:text-[#ff6a00]">Home</a>
-    <a href="courses.html" class="py-2 hover:text-[#ff6a00]">Courses</a>
-    <a href="about.html" class="py-2 hover:text-[#ff6a00]">About Us</a>
-    <a href="contact.html" class="py-2 hover:text-[#ff6a00] text-[#ff6a00] font-bold">Contact</a>
+
+    <a href="index.html" class="py-2 hover:text-[#AF2727]">Home</a>
+    <a href="courses.html" class="py-2 hover:text-[#AF2727]">Courses</a>
+    <a href="about.html" class="py-2 hover:text-[#AF2727]">About Us</a>
+    <a href="contact.html" class="py-2 text-[#AF2727] font-bold hover:text-[#AF2727]">Contact</a>
 
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
-       class="mt-2 text-center rounded-lg bg-[#ff6a00] text-white px-4 py-2 font-bold">
+       class="mt-2 text-center rounded-lg bg-[#AF2727] text-white px-4 py-2 font-bold">
        Enroll Now
     </a>
+
   </div>
 </nav>
 
 
-<!-- Main Content -->
+<!-- MAIN CONTENT START -->
 <main class="flex w-full flex-1 flex-col items-center px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
 <div class="flex w-full max-w-3xl flex-col items-center gap-12 text-center">
 
 <h1 class="text-4xl font-black sm:text-5xl lg:text-6xl">Get In Touch</h1>
+
 <p class="max-w-xl text-text-light/80">
 Have a question or want to work together? Reach out to us through any method below.
 </p>
-
-<!-- Buttons -->
+<!-- CONTACT BUTTONS -->
 <div class="flex w-full flex-col gap-4 sm:flex-row">
 
-<!-- WhatsApp -->
-<a href="https://wa.me/917455999135?text=I%20am%20interested%20for%20your%20IT%20course" target="_blank" class="flex h-12 flex-1 items-center justify-center gap-2 rounded-lg bg-primary px-5 text-base font-bold text-white hover:opacity-90">
-<span class="material-symbols-outlined">chat</span>
-<span>Contact on WhatsApp</span>
-</a>
+  <!-- WhatsApp -->
+  <a href="https://wa.me/917455999135?text=I%20am%20interested%20for%20your%20IT%20course" 
+     target="_blank"
+     class="flex h-12 flex-1 items-center justify-center gap-2 rounded-lg 
+            bg-[#AF2727] px-5 text-base font-bold text-white hover:opacity-90">
 
-<!-- Email Us Redirect -->
-<a href="mailto:cyvioratechnologies@gmail.com" class="flex h-12 flex-1 items-center justify-center gap-2 rounded-lg bg-surface-dark px-5 text-base font-bold text-white hover:bg-border-dark">
-<span class="material-symbols-outlined">email</span>
-<span>Email Us</span>
-</a>
+    <span class="material-symbols-outlined">chat</span>
+    <span>Contact on WhatsApp</span>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:cyvioratechnologies@gmail.com"
+     class="flex h-12 flex-1 items-center justify-center gap-2 rounded-lg 
+            bg-surface-dark px-5 text-base font-bold text-white 
+            hover:bg-border-dark">
+
+    <span class="material-symbols-outlined">email</span>
+    <span>Email Us</span>
+  </a>
 
 </div>
 
-<!-- Contact Form -->
+
+<!-- CONTACT FORM -->
 <div class="w-full rounded-xl border border-border-dark bg-surface-dark p-6 sm:p-8 text-left">
 
 <h2 class="text-center text-3xl font-bold mb-8">Send us a Message</h2>
 
-<form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<form action="https://api.web3forms.com/submit" method="POST" 
+      class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 
-<input type="hidden" name="access_key" value="b4e561a6-e365-4294-acdd-671db1e3e8a3">
-<input type="hidden" name="from_name" value="Cyviora Contact Form">
-<input type="hidden" name="redirect" value="https://web3forms.com/success">
+  <input type="hidden" name="access_key" value="b4e561a6-e365-4294-acdd-671db1e3e8a3">
+  <input type="hidden" name="from_name" value="Cyviora Contact Form">
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-<div>
-<label class="mb-2 block text-sm text-text-light/80">Full Name</label>
-<input type="text" name="name" required placeholder="John Doe" class="block w-full rounded-lg bg-background-dark p-3 text-white border-border-dark focus:border-primary focus:ring-primary"/>
-</div>
+  <!-- Full Name -->
+  <div>
+    <label class="mb-2 block text-sm text-text-light/80">Full Name</label>
+    <input type="text" name="name" required placeholder="John Doe"
+           class="block w-full rounded-lg bg-background-dark p-3 text-white 
+                  border-border-dark focus:border-[#AF2727] focus:ring-[#AF2727]"/>
+  </div>
 
-<div>
-<label class="mb-2 block text-sm text-text-light/80">Email Address</label>
-<input type="email" name="email" required placeholder="you@example.com" class="block w-full rounded-lg bg-background-dark p-3 text-white border-border-dark focus:border-primary focus:ring-primary"/>
-</div>
+  <!-- Email -->
+  <div>
+    <label class="mb-2 block text-sm text-text-light/80">Email Address</label>
+    <input type="email" name="email" required placeholder="you@example.com"
+           class="block w-full rounded-lg bg-background-dark p-3 text-white
+                  border-border-dark focus:border-[#AF2727] focus:ring-[#AF2727]"/>
+  </div>
 
-<div class="sm:col-span-2">
-<label class="mb-2 block text-sm text-text-light/80">Phone Number</label>
-<input type="tel" name="phone" required placeholder="(123) 456-7890" class="block w-full rounded-lg bg-background-dark p-3 text-white border-border-dark focus:border-primary focus:ring-primary"/>
-</div>
+  <!-- Phone -->
+  <div class="sm:col-span-2">
+    <label class="mb-2 block text-sm text-text-light/80">Phone Number</label>
+    <input type="tel" name="phone" required placeholder="(123) 456-7890"
+           class="block w-full rounded-lg bg-background-dark p-3 text-white 
+                  border-border-dark focus:border-[#AF2727] focus:ring-[#AF2727]"/>
+  </div>
 
-<div class="sm:col-span-2">
-<label class="mb-2 block text-sm text-text-light/80">Your Message</label>
-<textarea name="message" required rows="5" placeholder="Let us know how we can help..." class="block w-full rounded-lg bg-background-dark p-3 text-white border-border-dark focus:border-primary focus:ring-primary"></textarea>
-</div>
+  <!-- Message -->
+  <div class="sm:col-span-2">
+    <label class="mb-2 block text-sm text-text-light/80">Your Message</label>
+    <textarea name="message" required rows="5" 
+              placeholder="Let us know how we can help..."
+              class="block w-full rounded-lg bg-background-dark p-3 text-white 
+                     border-border-dark focus:border-[#AF2727] focus:ring-[#AF2727]"></textarea>
+  </div>
 
-<div class="sm:col-span-2">
-<button type="submit" class="flex h-12 w-full items-center justify-center rounded-lg bg-primary px-5 font-bold text-white hover:opacity-90">
-Send Message
-</button>
-</div>
+  <!-- Submit -->
+  <div class="sm:col-span-2">
+    <button type="submit"
+            class="flex h-12 w-full items-center justify-center rounded-lg 
+                   bg-[#AF2727] px-5 font-bold text-white hover:opacity-90">
+      Send Message
+    </button>
+  </div>
 
 </form>
-
 </div>
+<!-- LOCATION SECTION -->
+<div class="w-full flex flex-col gap-6 mt-16">
 
-<!-- Location -->
-<div class="w-full flex flex-col gap-6">
   <h2 class="text-3xl font-bold">Our Office</h2>
 
   <div class="aspect-video w-full overflow-hidden rounded-xl border border-border-dark">
 
-    <!-- ⭐ LIVE GOOGLE MAP EMBED ⭐ -->
+    <!-- GOOGLE MAP EMBED -->
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13776.312133569962!2d78.0670446561415!3d30.320298170718186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092915e94663ef%3A0x33158e5fb88c5399!2sTechnical%20Naithani%20Cyber%20Security%20Training%20in%20Dehradun%20(online)!5e0!3m2!1sen!2sin!4v1763442428273!5m2!1sen!2sin"
       width="100%" 
       height="100%" 
-      style="border: 10px;;" 
+      style="border:0;" 
       allowfullscreen="" 
       loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 
   </div>
-</div>
-
-
-<!-- Social -->
-<div class="flex w-full flex-col items-center gap-4">
-<h2 class="text-2xl font-bold">Follow Us</h2>
-<div class="flex items-center gap-5">
-<a href="https://www.instagram.com/cyvioratechnologies/" class="group"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaMPMFEyz5kOJVvZqHPBBHsXd900ZyaPcdHKNRcrWaegcgt2Wra95Xfg7oQZyond0FcZ9zZZ9PvCn0YR_MzX7U_wPYNeYh9D626jkdIkO62pzVdcLh2DVdwy3C9iGTrpDf8YRkOVBfAmGsC28IaDNlgVpnaDUagpT1CCbn9Q9xk0T_YaCCFXvlm_UWjO7yKlbqefSmuGBds6mV1VaFnWR9oT-xyIl1ugl2C6JdSH5E1YHs4wTRLik6o9_8VE8Sco3_BGKWwq1OxIY" class="h-8 w-8"/></a>
-<a href="https://www.linkedin.com/company/cyviora-technologies/" class="group"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcSDCVrpiyP39gRfdupUhFLNv7ixk132yJ_BoiJnGN-TEbFreBaUFwIaY7uARrfu5GgEkpW2HSLfzzo5tnDLxvQQaJ2AT6W64Fj-zdI6RYdaprejsQS383o9MaRaGPkmMYUhopsjFcMDlDj3Iqx_ZCynD6bhUoMJKQA3vKf-j6gI7a_Bqf4gkeLW-4WkwsArAa0d-pIv2Lo0A6z2QxSuZ2zrWN8iEBzKTcRmhIXmTdVx54l7ps_vJtvyW-zc6EJ9WU1T7a0dmCeZw" class="h-8 w-8"/></a>
-</div>
-</div>
 
 </div>
-</main>
 
-<!-- Footer -->
-<footer class="w-full border-t border-solid border-white/10">
-<div class="container mx-auto flex items-center justify-center px-4 py-6 text-center sm:px-6 lg:px-8">
-<p class="text-sm text-text-light/60">© 2025 Cyviora Technologies. All rights reserved.</p>
-<span class="material-symbols-outlined text-primary">favorite</span>
+<!-- SOCIAL LINKS -->
+<div class="flex w-full flex-col items-center gap-4 mt-16">
+  
+  <h2 class="text-2xl font-bold">Follow Us</h2>
+
+  <div class="flex items-center gap-5">
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/cyvioratechnologies/" class="group">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaMPMFEyz5kOJVvZqHPBBHsXd900ZyaPcdHKNRcrWaegcgt2Wra95Xfg7oQZyond0FcZ9zZZ9PvCn0YR_MzX7U_wPYNeYh9D626jkdIkO62pzVdcLh2DVdwy3C9iGTrpDf8YRkOVBfAmGsC28IaDNlgVpnaDUagpT1CCbn9Q9xk0T_YaCCFXvlm_UWjO7yKlbqefSmuGBds6mV1VaFnWR9oT-xyIl1ugl2C6JdSH5E1YHs4wTRLik6o9_8VE8Sco3_BGKWwq1OxIY"
+           class="h-8 w-8"/>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/cyviora-technologies/" class="group">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcSDCVrpiyP39gRfdupUhFLNv7ixk132yJ_BoiJnGN-TEbFreBaUFwIaY7uARrfu5GgEkpW2HSLfzzo5tnDLxvQQaJ2AT6W64Fj-zdI6RYdaprejsQS383o9MaRaGPkmMYUhopsjFcMDlDj3Iqx_ZCynD6bhUoMJKQA3vKf-j6gI7a_Bqf4gkeLW-4WkwsArAa0d-pIv2Lo0A6z2QxSuZ2zrWN8iEBzKTcRmhIXmTdVx54l7ps_vJtvyW-zc6EJ9WU1T7a0dmCeZw"
+           class="h-8 w-8"/>
+    </a>
+
+  </div>
+
 </div>
+<!-- FOOTER -->
+<footer class="w-full border-t border-solid border-white/10 mt-20">
+  <div class="container mx-auto flex items-center justify-center px-4 py-6 text-center sm:px-6 lg:px-8">
+
+    <p class="text-sm text-text-light/60">
+      © 2025 Cyviora Technologies. All rights reserved.
+    </p>
+
+    <span class="material-symbols-outlined text-[#AF2727] ml-2">favorite</span>
+
+  </div>
 </footer>
 
-</div>
+</div> <!-- wrapper end -->
 </body>
 </html>
 
-
+<!-- MOBILE MENU SCRIPT -->
 <script>
   (function() {
+
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav');
 
@@ -223,11 +271,10 @@ Send Message
       // Show / Hide menu
       mobileNav.classList.toggle('hidden');
 
-      // ⭐ Scroll page to top so menu is visible ⭐
+      // Scroll to top for visibility
       window.scrollTo({ top: 0, behavior: "smooth" });
+
     });
+
   })();
 </script>
-
-
-
