@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Cyviora Technologies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#080c10] text-[#E0E0E0] antialiased">
+<div class="relative flex min-h-screen w-full flex-col" id="page-wrapper">
+<!-- Sticky Header -->
+<!-- HEADER (Same as Home Page) -->
+<header class="sticky top-0 z-50 flex items-center justify-center whitespace-nowrap border-b border-solid border-b-white/10 bg-[#080c10]/80 px-4 sm:px-10 py-3 backdrop-blur-sm">
+  <div class="flex items-center justify-between w-full max-w-6xl">
+
+    <a class="flex items-center gap-4" href="index.html">
+      <img class="h-14 w-auto" src="https://i.ibb.co/p6rhGjbC/logo.png" alt="Cyviora Logo">
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center gap-9">
+      <a href="index.html" class="text-[#F5F5F5] text-sm hover:text-[#ff6a00] transition">Home</a>
+      <a href="courses.html" class="text-[#F5F5F5] text-sm hover:text-[#ff6a00] transition">Courses</a>
+<a href="about.html" class="text-[#ff6a00] text-sm font-bold">About Us</a>
+      <a href="contact.html" class="text-[#F5F5F5] text-sm hover:text-[#ff6a00] transition">Contact</a>
+    </nav>
+
+    <!-- Desktop Enroll -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
+       class="hidden md:flex min-w-[84px] items-center justify-center rounded-lg h-10 px-4 bg-[#ff6a00] text-white text-sm font-bold hover:bg-orange-600 transition">
+      Enroll Now
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn md:hidden text-white">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav id="mobile-nav" class="mobile-nav hidden md:hidden bg-[#080c10] border-b border-white/10">
+  <div class="px-4 py-4 flex flex-col gap-2">
+    <a href="index.html" class="py-2 hover:text-[#ff6a00]">Home</a>
+    <a href="courses.html" class="py-2 hover:text-[#ff6a00]">Courses</a>
+<a href="about.html" class="text-[#ff6a00] text-sm font-bold">About Us</a>
+    <a href="contact.html" class="py-2 hover:text-[#ff6a00]">Contact</a>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
+       class="mt-2 inline-block text-center rounded-lg bg-[#ff6a00] text-white px-4 py-2 font-bold">
+       Enroll Now
+    </a>
+  </div>
+</nav>
+
+<!-- MOBILE NAV CSS -->
+<style>
+.mobile-nav {transition: max-height .25s ease, opacity .25s ease; overflow: hidden;}
+.mobile-nav.hidden {max-height:0; opacity:0; pointer-events:none;}
+.mobile-nav:not(.hidden) {max-height:500px; opacity:1; pointer-events:auto;}
+</style>
+
+<!-- MOBILE NAV JS -->
+
+
+<!-- Main Content -->
+<main class="flex-grow">
+<div class="container mx-auto flex max-w-4xl flex-col gap-16 px-4 py-16 sm:px-6 sm:py-24 lg:gap-24 lg:px-8">
+<!-- Hero Section -->
+<section class="text-center">
+<h1 class="text-4xl font-black leading-tight tracking-tighter text-white md:text-5xl lg:text-6xl">The People Behind the Innovation</h1>
+<p class="mx-auto mt-4 max-w-2xl text-base font-normal leading-normal text-[#B0B0B0] md:text-lg">Learn about the team, our mission, and the vision that drives Cyviora Technologies to the forefront of tech education.</p>
+</section>
+<!-- About Cyviora Section -->
+<section>
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  About <span class="text-[#ff6a00]">Cyviora</span>
+</h2>
+<p class="mt-4 text-base font-normal leading-relaxed text-[#E0E0E0]">A detailed narrative about the company's origin, its purpose, and what it stands for in the tech education industry. We are committed to providing cutting-edge courses and fostering a community of innovators. Born from a passion for technology and a desire to bridge the skills gap, Cyviora has grown into a leading platform for aspiring developers, designers, and data scientists.</p>
+</section>
+<!-- Founder Section -->
+<section>
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  Meet Our <span class="text-[#ff6a00]">Founder</span>
+</h2>
+<div class="mt-8 flex flex-col gap-8 rounded-lg border border-white/10 bg-[#080c10] p-6 sm:flex-row sm:items-center sm:p-8">
+<div class="flex-shrink-0">
+<img class="h-40 w-40 rounded-full object-cover sm:h-48 sm:w-48" data-alt="Professional headshot of Jane Doe, CEO &amp; Founder" src="https://i.ibb.co/V0pXh1yr/myimg.jpg"/>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-white">Ankit Naithani</h3>
+<p class="text-base font-medium text-[#ff6a00]">CEO &amp; Founder</p>
+<p class="mt-4 text-base font-normal leading-relaxed text-[#E0E0E0]">Drawing on his extensive experience in Cyber Security and a genuine commitment to teaching, Ankit Naithani established Cyviora to build a learning space that feels real, relevant, and impactful. He aims to equip aspiring tech and cybersecurity professionals with practical skills and a mindset that helps them grow confidently in a constantly changing digital landscape.</p>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Section -->
+<section>
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  Our Mission & <span class="text-[#ff6a00]">Vision</span>
+</h2><div class="mt-8 grid gap-8 md:grid-cols-2">
+<div>
+<h3 class="text-xl font-bold text-white">Our Mission</h3>
+<p class="mt-2 text-base font-normal leading-relaxed text-[#E0E0E0]">To deliver high-quality, hands-on tech education that equips students with real-world skills and prepares them for successful careers. We are committed to fostering a supportive community of learners and innovators.</p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white">Our Vision</h3>
+<p class="mt-2 text-base font-normal leading-relaxed text-[#E0E0E0]">To be the most trusted and effective platform for tech education globally, empowering individuals from all backgrounds to build the future of technology and achieve their full potential.</p>
+</div>
+</div>
+</section>
+<!-- Unique Strengths Section -->
+<section>
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  Our Unique <span class="text-[#ff6a00]">Strength</span>
+</h2><div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col items-start">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-[#ff6a00]/20">
+<span class="material-symbols-outlined text-3xl text-[#ff6a00]">school</span>
+</div>
+<h3 class="mt-4 text-xl font-bold text-white">Expert-Led Curriculum</h3>
+<p class="mt-2 text-base font-normal leading-relaxed text-[#E0E0E0]">Courses designed and taught by industry experts with years of real-world experience.</p>
+</div>
+<div class="flex flex-col items-start">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-[#ff6a00]/20">
+<span class="material-symbols-outlined text-3xl text-[#ff6a00]">code_blocks</span>
+</div>
+<h3 class="mt-4 text-xl font-bold text-white">Hands-On Projects</h3>
+<p class="mt-2 text-base font-normal leading-relaxed text-[#E0E0E0]">Build a portfolio of practical projects that showcase your skills to potential employers.</p>
+</div>
+<div class="flex flex-col items-start">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-[#ff6a00]/20">
+<span class="material-symbols-outlined text-3xl text-[#ff6a00]">work</span>
+</div>
+<h3 class="mt-4 text-xl font-bold text-white">Career-Focused Training</h3>
+<p class="mt-2 text-base font-normal leading-relaxed text-[#E0E0E0]">Gain the specific skills and knowledge that top tech companies are looking for today.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="rounded-lg border border-white/10 bg-gradient-to-r from-[#ff6a00]/10 to-transparent p-8 text-center sm:p-12">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-white">Ready to Start Your Journey?</h2>
+<p class="mx-auto mt-4 max-w-xl text-base font-normal leading-normal text-[#B0B0B0]">Join a community of passionate learners and take the next step in your tech career. Our courses are designed to get you job-ready.</p>
+<button 
+  class="mt-8 flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#ff6a00] px-6 text-base font-bold text-white transition-opacity hover:opacity-90 mx-auto"
+  onclick="window.location.href='courses.html';"
+>
+  <span class="truncate">Explore Courses</span>
+</button>
+
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-solid border-white/10">
+<div class="container mx-auto flex items-center justify-center px-4 py-6 text-center sm:px-6 lg:px-8">
+<p class="flex items-center gap-2 text-sm text-[#B0B0B0]">
+                    © 2025 Cyviora Technologies. All rights reserved.
+                    <span class="material-symbols-outlined text-base text-[#ff6a00]">favorite</span>
+</p>
+</div>
+</footer>
+</div>
+</body></html>
+
+<script>
+  (function() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (!menuBtn || !mobileNav) return;
+
+    menuBtn.addEventListener('click', () => {
+
+      // Show / Hide menu
+      mobileNav.classList.toggle('hidden');
+
+      // ⭐ Scroll page to top so menu is visible ⭐
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  })();
+</script>

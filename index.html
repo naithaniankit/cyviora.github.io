@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courses - Cyviora Technologies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+  .no-bg {
+    background: transparent !important;
+  }
+  .snap-x::-webkit-scrollbar {
+    display: none;
+  }
+  .snap-x {
+    scrollbar-width: none;
+  }
+</style>
+
+
+<style>
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    scrollbar-width: none;
+  }
+</style>
+
+
+
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6a00",
+                        "background-light": "#f8f7f5", // Fallback, not used per request
+                        "background-dark": "#080c10",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-dark font-display text-gray-300">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Sticky Header -->
+<!-- Header (Same as Home Page) -->
+<header class="sticky top-0 z-50 flex items-center justify-center whitespace-nowrap border-b border-solid border-white/10 bg-[#080c10]/80 px-4 sm:px-10 py-3 backdrop-blur-sm">
+  <div class="flex items-center justify-between w-full max-w-6xl">
+    
+    <!-- Logo -->
+    <a class="flex items-center gap-4" href="index.html">
+      <img class="h-14 w-auto" src="https://i.ibb.co/p6rhGjbC/logo.png" alt="Cyviora Technologies Logo"/>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-9">
+      <a class="text-[#ff6a00] text-sm font-medium font-bold" href="index.html">Home</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="courses.html">Courses</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="about.html">About Us</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Enroll Button -->
+    <div class="flex items-center gap-4">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
+         class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-[#ff6a00] text-white text-sm font-bold hover:bg-orange-600">
+        <span class="truncate">Enroll Now</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn md:hidden flex items-center justify-center text-[#F5F5F5]" aria-expanded="false">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- yha tak utha lo  -->
+
+<!-- Mobile Navigation (same as Home Page) -->
+<nav id="mobile-nav" class="mobile-nav hidden md:hidden bg-[#080c10] border-b border-white/10">
+  <div class="px-4 py-4 flex flex-col gap-2">
+    <a href="index.html" class="py-2 text-[#ff6a00] font-bold">Home</a>
+    <a href="courses.html" class="py-2 hover:text-[#ff6a00]">Courses</a>
+    <a href="about.html" class="py-2 hover:text-[#ff6a00]">About Us</a>
+    <a href="contact.html" class="py-2 hover:text-[#ff6a00]">Contact</a>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
+       class="mt-2 inline-block text-center rounded-lg bg-[#ff6a00] text-white px-4 py-2 font-bold">
+       Enroll Now
+    </a>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="w-full flex-grow">
+
+<!-- HERO -->
+<!-- HERO -->
+<section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
+  <div class="responsive-container">
+    <div class="flex flex-col gap-8 max-w-4xl mx-auto text-center items-center">
+
+      <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black">
+        Practical <span class="text-[#ff6a00]">Cyber Security</span> & IT Training
+      </h1>
+
+      <p class="text-[#A0A0A0] max-w-2xl">
+        Transform your career through hands-on learning and expert guidance in the fields of IT and cybersecurity.
+      </p>
+
+      <div class="flex gap-4 justify-center">
+        <a href="courses.html"
+           class="min-w-[140px] rounded-lg h-12 px-6 bg-[#ff6a00] text-white font-bold hover:bg-orange-600 flex items-center justify-center">
+          View Courses
+        </a>
+
+        <a href="demo.html"
+           class="min-w-[140px] rounded-lg h-12 px-6 border-2 border-[#ff6a00] text-[#ff6a00] font-bold hover:bg-[#ff6a00]/10 flex items-center justify-center">
+          Free Demo
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
+  <div class="responsive-container">
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  Our Core <span class="text-[#ff6a00]">Programs</span>
+</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="flex flex-col gap-3">
+        <div class="w-full aspect-square bg-cover bg-center rounded-lg" style="background-image:url('https://i.ibb.co/KxHBqHJM/Demo-1.png')"></div>
+        <p class="text-white font-bold">A+</p>
+        <p class="text-[#A0A0A0]">Master the fundamentals of IT hardware and software.</p>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="w-full aspect-square bg-cover bg-center rounded-lg" style="background-image:url('https://i.ibb.co/fd9pPwtn/Demo-2.png')"></div>
+        <p class="text-white font-bold">Network+</p>
+        <p class="text-[#A0A0A0]">Build a strong foundation in networking concepts.</p>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="w-full aspect-square bg-cover bg-center rounded-lg" style="background-image:url('https://i.ibb.co/p6bHk5Hp/Demo-3.png')"></div>
+        <p class="text-white font-bold">CCNA</p>
+        <p class="text-[#A0A0A0]">Configure and manage Cisco routers and switches.</p>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="w-full aspect-square bg-cover bg-center rounded-lg" style="background-image:url('https://i.ibb.co/0yGzhyrW/Demo-4.png')"></div>
+        <p class="text-white font-bold">RHCSA</p>
+        <p class="text-[#A0A0A0]">Gain expertise in Red Hat Enterprise Linux admin.</p>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="w-full aspect-square bg-cover bg-center rounded-lg" style="background-image:url('https://i.ibb.co/fzfJTHXk/Demo-5.png')"></div>
+        <p class="text-white font-bold">Cyber Security</p>
+        <p class="text-[#A0A0A0]">Protect systems and networks from cyber threats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SECTION -->
+<section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
+  <div class="responsive-container text-center">
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  Why <span class="text-[#ff6a00]">Cyviora</span> stands out
+
+</h2>
+    <p class="text-[#A0A0A0] max-w-2xl mx-auto mb-12">
+      We are committed to providing the best learning experience with practical skills and career success.
+    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">science</span>
+        <h3 class="text-white mt-3 font-bold">Practical Labs Focus</h3>
+        <p class="text-[#A0A0A0]">Hands-on experience with real-world scenarios.</p>
+      </div>
+
+      <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">groups</span>
+        <h3 class="text-white mt-3 font-bold">Small Batch Advantage</h3>
+        <p class="text-[#A0A0A0]">Personalized mentoring in small groups.</p>
+      </div>
+
+      <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">support_agent</span>
+        <h3 class="text-white mt-3 font-bold">Doubt Support</h3>
+        <p class="text-[#A0A0A0]">Instant expert doubt resolution.</p>
+      </div>
+
+      <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">work</span>
+        <h3 class="text-white mt-3 font-bold">Placement Assistance</h3>
+        <p class="text-[#A0A0A0]">Interview preparation and job support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS (unchanged logic) -->
+<section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
+  <div class="max-w-6xl w-full">
+
+    <!-- HEADING -->
+    <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-10 text-center">
+      What Our <span class="text-[#ff6a00]">Students</span> Say
+    </h2>
+
+    <!-- SLIDER WRAPPER -->
+    <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar px-6 sm:px-0 justify-start sm:justify-center">
+
+      <!-- CARD TEMPLATE (repeatable) -->
+      <!-- CARD 1 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"The practical labs were a game-changer..."</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Reena Johnson</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Amazing support and great trainers!"</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Priya Sharma</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Best place to start your IT career."</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- David Chen</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Very friendly environment and great course."</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Anjali Mehta</p>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Trainers explain everything clearly."</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Rohit Yadav</p>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Very hands-on and practical approach."</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Arjun Singh</p>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Great placement support!"</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Meera Das</p>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
+        <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
+          <p class="text-[#F5F5F5]">"Worth every rupee. Best institute!"</p>
+          <p class="text-[#A0A0A0] pt-3 border-t border-white/10 text-sm">- Kunal Verma</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- CONTACT -->
+<section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
+  <div class="responsive-container max-w-4xl text-center">
+<h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
+  Get into <span class="text-[#ff6a00]">Touch</span>
+</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
+
+      <a href="https://wa.me/917455999135?text=I%20am%20interested%20for%20your%20IT%20course"
+         class="flex items-center gap-4 rounded-lg p-6 border border-white/10 hover:bg-white/5">
+        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">sms</span>
+        <div class="text-left">
+          <h3 class="text-white text-lg font-bold">WhatsApp</h3>
+          <p class="text-[#A0A0A0] text-sm">Chat with us</p>
+        </div>
+      </a>
+
+      <a href="mailto:cyvioratechnologies@gmail.com"
+         class="flex items-center gap-4 rounded-lg p-6 border border-white/10 hover:bg-white/5">
+        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">mail</span>
+        <div class="text-left">
+          <h3 class="text-white text-lg font-bold">Email</h3>
+          <p class="text-[#A0A0A0] text-sm">Send your queries</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="flex justify-center border-t border-white/10 px-4 sm:px-10 py-6 w-full">
+  <div class="text-center text-[#A0A0A0] text-sm flex items-center gap-2">
+    © 2025 Cyviora Technologies. All rights reserved.
+    <span class="material-symbols-outlined text-lg text-[#ff6a00]">favorite</span>
+  </div>
+</footer>
+
+</div>
+
+<!-- MOBILE NAV SCRIPT -->
+<script>
+  (function() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (!menuBtn || !mobileNav) return;
+
+    menuBtn.addEventListener('click', () => {
+
+      // Show / Hide menu
+      mobileNav.classList.toggle('hidden');
+
+      // ⭐ Scroll page to top so menu is visible ⭐
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  })();
+</script>
+
+
+<!-- TESTIMONIAL SLIDER SCRIPT -->
+<script>
+(function() {
+  const container = document.querySelector('.snap-x.snap-mandatory');
+  if (!container) return;
+
+  container.classList.add('testimonials-scroll');
+  const INTERVAL = 3000;
+  let paused = false;
+
+  function slide() {
+    if (paused) return;
+    const max = container.scrollWidth - container.clientWidth;
+    const item = container.querySelector('.snap-center');
+    const gap = parseFloat(getComputedStyle(container).gap || 0);
+    const offset = item.offsetWidth + gap;
+
+    if (container.scrollLeft + 10 >= max) container.scrollLeft = 0;
+    else container.scrollBy({ left: offset, behavior: 'smooth' });
+  }
+
+  let timer = setInterval(slide, INTERVAL);
+
+  container.addEventListener('mouseenter', () => { paused = true; clearInterval(timer); });
+  container.addEventListener('mouseleave', () => { paused = false; timer = setInterval(slide, INTERVAL); });
+})();
+</script>
+
+
+</body>
+</html>
