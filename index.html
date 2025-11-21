@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <style>
         body {
@@ -26,7 +26,6 @@
   }
 </style>
 
-
 <style>
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
@@ -36,16 +35,14 @@
   }
 </style>
 
-
-
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#ff6a00",
-                        "background-light": "#f8f7f5", // Fallback, not used per request
+                        "primary": "#AF2727",
+                        "background-light": "#f8f7f5",
                         "background-dark": "#080c10",
                     },
                     fontFamily: {
@@ -64,28 +61,28 @@
 </head>
 <body class="bg-background-dark font-display text-gray-300">
 <div class="relative flex min-h-screen w-full flex-col">
+
 <!-- Sticky Header -->
-<!-- Header (Same as Home Page) -->
 <header class="sticky top-0 z-50 flex items-center justify-center whitespace-nowrap border-b border-solid border-white/10 bg-[#080c10]/80 px-4 sm:px-10 py-3 backdrop-blur-sm">
   <div class="flex items-center justify-between w-full max-w-6xl">
     
     <!-- Logo -->
     <a class="flex items-center gap-4" href="index.html">
-      <img class="h-14 w-auto" src="https://i.ibb.co/p6rhGjbC/logo.png" alt="Cyviora Technologies Logo"/>
+      <img class="h-14 w-auto" src="https://i.ibb.co/zH4ZmND7/cyviora.png" alt="Cyviora Technologies Logo"/>
     </a>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center gap-9">
-      <a class="text-[#ff6a00] text-sm font-medium font-bold" href="index.html">Home</a>
-      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="courses.html">Courses</a>
-      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="about.html">About Us</a>
-      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#ff6a00]" href="contact.html">Contact</a>
+      <a class="text-[#AF2727] text-sm font-medium font-bold" href="index.html">Home</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#AF2727]" href="courses.html">Courses</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#AF2727]" href="about.html">About Us</a>
+      <a class="text-[#F5F5F5] text-sm font-medium hover:text-[#AF2727]" href="contact.html">Contact</a>
     </nav>
 
     <!-- Enroll Button -->
     <div class="flex items-center gap-4">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
-         class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-[#ff6a00] text-white text-sm font-bold hover:bg-orange-600">
+         class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-[#AF2727] text-white text-sm font-bold hover:bg-[#8A1F1F]">
         <span class="truncate">Enroll Now</span>
       </a>
 
@@ -98,18 +95,16 @@
   </div>
 </header>
 
-<!-- yha tak utha lo  -->
-
-<!-- Mobile Navigation (same as Home Page) -->
+<!-- Mobile Navigation -->
 <nav id="mobile-nav" class="mobile-nav hidden md:hidden bg-[#080c10] border-b border-white/10">
   <div class="px-4 py-4 flex flex-col gap-2">
-    <a href="index.html" class="py-2 text-[#ff6a00] font-bold">Home</a>
-    <a href="courses.html" class="py-2 hover:text-[#ff6a00]">Courses</a>
-    <a href="about.html" class="py-2 hover:text-[#ff6a00]">About Us</a>
-    <a href="contact.html" class="py-2 hover:text-[#ff6a00]">Contact</a>
+    <a href="index.html" class="py-2 text-[#AF2727] font-bold">Home</a>
+    <a href="courses.html" class="py-2 hover:text-[#AF2727]">Courses</a>
+    <a href="about.html" class="py-2 hover:text-[#AF2727]">About Us</a>
+    <a href="contact.html" class="py-2 hover:text-[#AF2727]">Contact</a>
 
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScS1FmLE4htsb0v-uvAfnjQSjEKykyLgOf83quCR9CdNd8xBQ/viewform"
-       class="mt-2 inline-block text-center rounded-lg bg-[#ff6a00] text-white px-4 py-2 font-bold">
+       class="mt-2 inline-block text-center rounded-lg bg-[#AF2727] text-white px-4 py-2 font-bold">
        Enroll Now
     </a>
   </div>
@@ -119,13 +114,12 @@
 <main class="w-full flex-grow">
 
 <!-- HERO -->
-<!-- HERO -->
 <section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
   <div class="responsive-container">
     <div class="flex flex-col gap-8 max-w-4xl mx-auto text-center items-center">
 
       <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black">
-        Practical <span class="text-[#ff6a00]">Cyber Security</span> & IT Training
+        Practical <span class="text-[#AF2727]">Cyber Security</span> & IT Training
       </h1>
 
       <p class="text-[#A0A0A0] max-w-2xl">
@@ -134,12 +128,12 @@
 
       <div class="flex gap-4 justify-center">
         <a href="courses.html"
-           class="min-w-[140px] rounded-lg h-12 px-6 bg-[#ff6a00] text-white font-bold hover:bg-orange-600 flex items-center justify-center">
+           class="min-w-[140px] rounded-lg h-12 px-6 bg-[#AF2727] text-white font-bold hover:bg-[#8A1F1F] flex items-center justify-center">
           View Courses
         </a>
 
         <a href="demo.html"
-           class="min-w-[140px] rounded-lg h-12 px-6 border-2 border-[#ff6a00] text-[#ff6a00] font-bold hover:bg-[#ff6a00]/10 flex items-center justify-center">
+           class="min-w-[140px] rounded-lg h-12 px-6 border-2 border-[#AF2727] text-[#AF2727] font-bold hover:bg-[#AF2727]/10 flex items-center justify-center">
           Free Demo
         </a>
       </div>
@@ -152,7 +146,7 @@
 <section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
   <div class="responsive-container">
 <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
-  Our Core <span class="text-[#ff6a00]">Programs</span>
+  Our Core <span class="text-[#AF2727]">Programs</span>
 </h2>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -193,7 +187,7 @@
 <section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
   <div class="responsive-container text-center">
 <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
-  Why <span class="text-[#ff6a00]">Cyviora</span> stands out
+  Why <span class="text-[#AF2727]">Cyviora</span> stands out
 
 </h2>
     <p class="text-[#A0A0A0] max-w-2xl mx-auto mb-12">
@@ -201,25 +195,25 @@
     </p>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="bg-white/5 p-6 rounded-lg border border-white/10">
-        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">science</span>
+        <span class="material-symbols-outlined text-[#AF2727] text-4xl">science</span>
         <h3 class="text-white mt-3 font-bold">Practical Labs Focus</h3>
         <p class="text-[#A0A0A0]">Hands-on experience with real-world scenarios.</p>
       </div>
 
       <div class="bg-white/5 p-6 rounded-lg border border-white/10">
-        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">groups</span>
+        <span class="material-symbols-outlined text-[#AF2727] text-4xl">groups</span>
         <h3 class="text-white mt-3 font-bold">Small Batch Advantage</h3>
         <p class="text-[#A0A0A0]">Personalized mentoring in small groups.</p>
       </div>
 
       <div class="bg-white/5 p-6 rounded-lg border border-white/10">
-        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">support_agent</span>
+        <span class="material-symbols-outlined text-[#AF2727] text-4xl">support_agent</span>
         <h3 class="text-white mt-3 font-bold">Doubt Support</h3>
         <p class="text-[#A0A0A0]">Instant expert doubt resolution.</p>
       </div>
 
       <div class="bg-white/5 p-6 rounded-lg border border-white/10">
-        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">work</span>
+        <span class="material-symbols-outlined text-[#AF2727] text-4xl">work</span>
         <h3 class="text-white mt-3 font-bold">Placement Assistance</h3>
         <p class="text-[#A0A0A0]">Interview preparation and job support.</p>
       </div>
@@ -227,20 +221,16 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS (unchanged logic) -->
+<!-- TESTIMONIALS -->
 <section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
   <div class="max-w-6xl w-full">
 
-    <!-- HEADING -->
     <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-10 text-center">
-      What Our <span class="text-[#ff6a00]">Students</span> Say
+      What Our <span class="text-[#AF2727]">Students</span> Say
     </h2>
 
-    <!-- SLIDER WRAPPER -->
     <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar px-6 sm:px-0 justify-start sm:justify-center">
 
-      <!-- CARD TEMPLATE (repeatable) -->
-      <!-- CARD 1 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"The practical labs were a game-changer..."</p>
@@ -248,7 +238,6 @@
         </div>
       </div>
 
-      <!-- CARD 2 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Amazing support and great trainers!"</p>
@@ -256,7 +245,6 @@
         </div>
       </div>
 
-      <!-- CARD 3 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Best place to start your IT career."</p>
@@ -264,7 +252,6 @@
         </div>
       </div>
 
-      <!-- CARD 4 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Very friendly environment and great course."</p>
@@ -272,7 +259,6 @@
         </div>
       </div>
 
-      <!-- CARD 5 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Trainers explain everything clearly."</p>
@@ -280,7 +266,6 @@
         </div>
       </div>
 
-      <!-- CARD 6 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Very hands-on and practical approach."</p>
@@ -288,7 +273,6 @@
         </div>
       </div>
 
-      <!-- CARD 7 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Great placement support!"</p>
@@ -296,7 +280,6 @@
         </div>
       </div>
 
-      <!-- CARD 8 -->
       <div class="snap-center w-[90%] max-w-[340px] sm:w-[45%] lg:w-[32%] shrink-0 mx-auto">
         <div class="bg-white/5 p-6 border border-white/10 rounded-xl min-h-[160px] flex flex-col justify-between">
           <p class="text-[#F5F5F5]">"Worth every rupee. Best institute!"</p>
@@ -308,23 +291,18 @@
   </div>
 </section>
 
-
-
-
-
-
 <!-- CONTACT -->
 <section class="flex justify-center py-16 sm:py-24 px-4 sm:px-10">
   <div class="responsive-container max-w-4xl text-center">
 <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 sm:mb-12 text-center">
-  Get into <span class="text-[#ff6a00]">Touch</span>
+  Get into <span class="text-[#AF2727]">Touch</span>
 </h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
 
       <a href="https://wa.me/917455999135?text=I%20am%20interested%20for%20your%20IT%20course"
          class="flex items-center gap-4 rounded-lg p-6 border border-white/10 hover:bg-white/5">
-        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">sms</span>
+        <span class="material-symbols-outlined text-[#AF2727] text-4xl">sms</span>
         <div class="text-left">
           <h3 class="text-white text-lg font-bold">WhatsApp</h3>
           <p class="text-[#A0A0A0] text-sm">Chat with us</p>
@@ -333,7 +311,7 @@
 
       <a href="mailto:cyvioratechnologies@gmail.com"
          class="flex items-center gap-4 rounded-lg p-6 border border-white/10 hover:bg-white/5">
-        <span class="material-symbols-outlined text-[#ff6a00] text-4xl">mail</span>
+        <span class="material-symbols-outlined text-[#AF2727] text-4xl">mail</span>
         <div class="text-left">
           <h3 class="text-white text-lg font-bold">Email</h3>
           <p class="text-[#A0A0A0] text-sm">Send your queries</p>
@@ -350,7 +328,7 @@
 <footer class="flex justify-center border-t border-white/10 px-4 sm:px-10 py-6 w-full">
   <div class="text-center text-[#A0A0A0] text-sm flex items-center gap-2">
     © 2025 Cyviora Technologies. All rights reserved.
-    <span class="material-symbols-outlined text-lg text-[#ff6a00]">favorite</span>
+    <span class="material-symbols-outlined text-lg text-[#AF2727]">favorite</span>
   </div>
 </footer>
 
@@ -366,15 +344,12 @@
 
     menuBtn.addEventListener('click', () => {
 
-      // Show / Hide menu
       mobileNav.classList.toggle('hidden');
 
-      // ⭐ Scroll page to top so menu is visible ⭐
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   })();
 </script>
-
 
 <!-- TESTIMONIAL SLIDER SCRIPT -->
 <script>
@@ -403,7 +378,6 @@
   container.addEventListener('mouseleave', () => { paused = false; timer = setInterval(slide, INTERVAL); });
 })();
 </script>
-
 
 </body>
 </html>
