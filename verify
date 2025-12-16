@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Certificate Verification - Cyviora Technologies</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<style type="text/tailwindcss">
+@layer base {
+  body { font-family: 'Inter', sans-serif; -webkit-text-size-adjust: 100%; }
+}
+</style>
+
+<script>
+  tailwind = {
+    config: {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#AF2727',
+            'background-dark': '#080c10',
+            'text-light': '#f1f1f1',
+            'border-dark': '#34383c',
+            'surface-dark': '#161a1e'
+          }
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="cyv-ceo-favicon-32.png" />
+</head>
+
+<body class="bg-background-dark text-text-light antialiased">
+<div class="relative flex min-h-screen w-full flex-col">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-white/10 bg-[#080c10]/80 backdrop-blur-sm">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="cvy-techlogo.png" class="h-12 sm:h-14 w-auto" alt="Cyviora Technologies" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-sm hover:text-primary">Home</a>
+      <a href="courses.html" class="text-sm hover:text-primary">Courses</a>
+      <a href="about.html" class="text-sm hover:text-primary">About Us</a>
+      <a href="contact.html" class="text-sm hover:text-primary">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="https://forms.gle/NCuYgQTwADVJ7yHv7" class="hidden md:flex h-10 items-center rounded-lg bg-primary px-4 text-sm font-bold">Enroll Now</a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-white">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobileNav" class="hidden md:hidden border-t border-white/10 bg-background-dark">
+    <nav class="flex flex-col px-4 py-4 gap-3 text-sm">
+      <a href="index.html" class="hover:text-primary">Home</a>
+      <a href="courses.html" class="hover:text-primary">Courses</a>
+      <a href="about.html" class="hover:text-primary">About Us</a>
+      <a href="contact.html" class="hover:text-primary">Contact</a>
+      <a href="https://forms.gle/NCuYgQTwADVJ7yHv7" class="mt-2 rounded-lg bg-primary px-4 py-2 text-center font-bold">Enroll Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="flex flex-1 items-center justify-center px-4 py-12 sm:py-16">
+  <div class="w-full max-w-2xl rounded-2xl border border-border-dark bg-surface-dark p-6 sm:p-8 text-center shadow-lg">
+
+    <span class="material-symbols-outlined text-5xl sm:text-6xl text-primary mb-4">verified</span>
+
+    <h1 class="text-2xl sm:text-4xl font-black mb-4">Certificate Verification</h1>
+
+    <p class="text-sm sm:text-base text-text-light/80 mb-6">
+      We are currently upgrading our certificate verification system to provide a more secure and reliable experience.
+    </p>
+
+    <div class="rounded-xl bg-background-dark border border-border-dark p-5 sm:p-6 text-left text-sm sm:text-base">
+      <p class="mb-3">🔒 <strong>What this means?</strong></p>
+      <ul class="list-disc list-inside text-text-light/80 space-y-2">
+        <li>All certificates issued by <strong>Cyviora Technologies</strong> are genuine and verifiable.</li>
+        <li>Online verification portal will be available soon.</li>
+        <li>Until then, manual verification is supported.</li>
+      </ul>
+    </div>
+
+    <p class="mt-6 text-sm sm:text-base text-text-light/80">
+      📩 For certificate verification, please contact us at<br />
+      <a href="mailto:cyvioratechnologies@gmail.com" class="text-primary font-semibold break-all">cyvioratechnologies@gmail.com</a><br />
+      or WhatsApp us at
+      <a href="https://wa.me/917455999135" class="text-primary font-semibold">+91 74559 99135</a>
+    </p>
+
+    <div class="mt-8">
+      <a href="https://wa.me/+917455999135" class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm sm:text-base font-bold">
+        <span class="material-symbols-outlined">arrow_back</span>
+        Contact for Verification
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 py-6 text-center text-xs sm:text-sm text-[#B0B0B0]">
+  © 2025 Cyviora Technologies. All rights reserved.
+</footer>
+
+</div>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuBtn?.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
